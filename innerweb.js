@@ -9,9 +9,10 @@ fetch('https://dummyjson.com/products')
     <div>ITEM: ${value.title}</div>
     <div>Cost: $ ${value.price}</div>
     <div class="addtocart"></div>
-    <button class="cartb" onclick="if(cart.find(prod => prod.title=== '${value.title}')){
+    <button class="cartb" onclick="
+    if(cart){if(cart.find(prod => prod.title=== '${value.title}')){
         cart[cart.findIndex(prod => prod.title=== '${value.title}')].quantity +=1;
-    }else{
+    }}else{
         cart.push({title:'${value.title}',price:'${value.price}',image:'${value.images[0]}',quantity:1});
     };
     console.log(cart);
