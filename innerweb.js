@@ -12,6 +12,8 @@ fetch('https://dummyjson.com/products')
     <button class="cartb" onclick="
     if(cart){if(cart.find(prod => prod.title=== '${value.title}')){
         cart[cart.findIndex(prod => prod.title=== '${value.title}')].quantity +=1;
+    }else{
+        cart.push({title:'${value.title}',price:'${value.price}',image:'${value.images[0]}',quantity:1});
     }}else{
         cart=[{title:'${value.title}',price:'${value.price}',image:'${value.images[0]}',quantity:1}];
     };
