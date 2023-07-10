@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link href="login.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="init one">
+                <a href="index.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Offers</a>
+                <a href="#">contact us</a>
+            </div>
+            <div class="login one">
+                <a href="register.html">Register</a>
+            </div>      
+        </div>
+        <div class="logintab">
+            <p>Login</p>
+            <input id="user" class="user" placeholder="Username">
+            <span><ion-icon name="person-circle-outline"></ion-icon></span>
+            <div class="input"></div>
+            <input id="password" class="password" placeholder="Password" type="password">
+            <span><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
+            <div class="input"></div>
+            <div class="reg">
+                <input type="checkbox" id="checkbox">
+                <lable for="checkbox"" >Remember me</lable>
+                <a href="#" class="register">Forgent Password?</a>
+            </div>
+            <button class="login1">Login</button>
+            <p class="one">Don't have an account?<a href="register.html" class="register" >Register</a></p>
+
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="login.js" type="module"></script>
+    </body>
+</html>

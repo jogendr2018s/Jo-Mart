@@ -1,0 +1,96 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(intro.avif);
+    background-size: cover;
+}
+a{
+    color: rgb(255, 252, 252,0.5);
+    text-decoration: none;
+    margin-right: 25px;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+    color:white;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid rgb(255, 254, 254);
+}
+.one{
+    margin:20px;
+}
+.search{
+    width: 500px;
+    margin-left: 50px;
+    outline: none;
+    border: 0;
+    height: 30px;
+    border-radius: 60px;
+    background-color: white;
+    font-size: larger;
+    padding-left: 10px ;
+}
+.icon{
+    height:32px;
+    width:32px;
+    border-color: 5px solid black;
+    border-radius: 50%;
+
+}
+.cart {
+    font-size: 30px;
+    margin-left: 40px ;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    position: relative;
+    top:10px;
+    color: rgb(255, 252, 252,0.5);
+}
+.cart:hover{
+    color:white;
+}
+.account{
+    margin-left: 40px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,250px));
+    grid-template-rows: repeat(auto-fit,minmax(300px,300px)) ;
+    gap:4em;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+    margin:5px;
+    align-items: center;
+}
+img{
+    height: 200px;
+    width:200px;
+}
+.cartb{
+    width: 100px;
+    height:30px;
+    border:0;
+    outline: none;  
+}
+.cartb:hover{
+    color:white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.cartb:active{
+    color:black;
+    background-color: white;
+}
+.addtocart{
+    font-weight: lighter;
+    font-size: 15px;
+}

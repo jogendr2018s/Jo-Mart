@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(intro.avif);
+    background-size: cover;
+}
+a{
+    color: rgb(255, 252, 252,0.5);
+    text-decoration: none;
+    margin-right: 25px;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+    color:white;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    margin:20px;
+}
+.container{
+    position: absolute;
+    top: 45%;
+    left:35%;
+    width:30%;
+    line-height: 30px;
+    text-align: center;
+
+}
+.intro{
+    color: white;
+    width:100%;
+    letter-spacing: 10px;
+}
+
